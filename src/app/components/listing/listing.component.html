@@ -1,0 +1,5 @@
+<ul class="list-group mt-5">
+  <li class="list-group-item" *ngFor="let listing of listings">
+    <a [routerLink]="['/listings/'+listing.id]">{{listing.city}} | {{listing.bedrooms}}</a>
+  </li>
+</ul>

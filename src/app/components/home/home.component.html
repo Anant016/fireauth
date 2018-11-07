@@ -1,0 +1,28 @@
+<br>
+<br>
+<div class="jumbotron" style="border-radius:10px">
+
+  <div class="container" style="text-align: center">
+    <h1>Property Listings</h1><hr>
+    
+    <div  *ngIf="!(afAuth.user | async)">
+        <p>Access your account</p>
+    <a (click)="login()" ><img src="assets/img/google.png"></a>
+    <a (click)="login_fb()" ><img src="assets/img/fb.png" height="47px" width="250px"></a>
+  </div>
+   
+    <div *ngIf="afAuth.user | async as user" >
+      <br>
+      <h1>Hello {{ user.displayName }}!</h1><br>
+      <!--
+      <div class="card center" style="text-align:center;width:250px">
+      <input type="file" (change)="uploadFile($event)">
+      <input type="text">
+      <button type="submit">Save</button>
+      </div><br>-->
+     <!-- <button type="button" (click)="logout()" value="Logout" class="btn">Logout</button>-->
+    </div>
+
+   
+  </div>
+</div>
