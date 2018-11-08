@@ -14,7 +14,7 @@ import {Observable } from 'rxjs';
 })
 export class HomeComponent implements OnInit {
   x:number;
-  constructor(private afAuth: AngularFireAuth,
+  constructor(public afAuth: AngularFireAuth,
               private afStorage:AngularFireStorage) { }
 
   ngOnInit() {
