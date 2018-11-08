@@ -10,7 +10,7 @@ import {FlashMessagesService} from 'angular2-flash-messages';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor(private afAuth: AngularFireAuth,
+  constructor(public afAuth: AngularFireAuth,
     private fms:FlashMessagesService) { }
 
   ngOnInit() {

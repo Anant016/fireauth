@@ -13,7 +13,7 @@
    
     <div *ngIf="afAuth.user | async as user" >
       <br>
-      <h1>Hello {{ user.displayName }}!</h1><br>
+      <p class="lead" style="text-size:50px">Hello {{ user.displayName }}!</p><br>
       <!--
       <div class="card center" style="text-align:center;width:250px">
       <input type="file" (change)="uploadFile($event)">
