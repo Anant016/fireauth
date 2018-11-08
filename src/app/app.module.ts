@@ -31,6 +31,7 @@ import{AngularFireStorageModule} from '@angular/fire/storage'
 import{AngularFirestoreModule} from '@angular/fire/firestore';
 import { FlashMessagesModule } from 'angular2-flash-messages';
 
+import {environment} from '../environments/environment.prod';
 const appRoutes:Routes=[
   {path:'',component:HomeComponent},
   {path:'listings',component:ListingComponent},
