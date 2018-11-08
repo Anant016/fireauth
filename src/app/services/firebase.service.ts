@@ -52,7 +52,7 @@ export class FirebaseService {
   }
   
   addListing(listing){
-    this.listingsCollection=this.afs.collection('listings');
+     this.listingsCollection=this.afs.collection('listings');
      var storageRef = firebase.storage().ref();
      for(let selectedFile of [(<HTMLInputElement>document.getElementById('image')).files[0]]){
            let path=`/${this.folder}/${selectedFile.name}`
@@ -61,6 +61,7 @@ export class FirebaseService {
            listing.path=path;
           
            iRef.put(selectedFile).then((snapshot)=>{
+             console.log(listing);
             this.listingsCollection.add(listing);   
            })
            
