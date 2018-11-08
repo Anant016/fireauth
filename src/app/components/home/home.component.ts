@@ -21,8 +21,12 @@ export class HomeComponent implements OnInit {
   }
 
   login(){
-    
-    this.afAuth.auth.signInWithRedirect(new auth.GoogleAuthProvider());
+    let gprovider=new firebase.auth.GoogleAuthProvider();
+    gprovider.setCustomParameters({
+      'login_hint': 'anu-fire.herokuapp.com'
+    });
+    //this.afAuth.auth.signInWithRedirect(new auth.GoogleAuthProvider());
+    firebase.auth().signInWithPopup(gprovider);
   }
   //Simple---------------------
   //signInWithPopup
