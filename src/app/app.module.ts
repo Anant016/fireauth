@@ -41,7 +41,7 @@ const appRoutes:Routes=[
 ]
 
 export const firebaseConfig={
-  apiKey: "AIzaSyBduujd3UvAVlyS0cAOmmP2GN1CE556uW8",
+  apiKey: "your_key",
   authDomain: "proplist-5f5f8.firebaseapp.com",
   databaseURL: "https://proplist-5f5f8.firebaseio.com",
   projectId: "proplist-5f5f8",
