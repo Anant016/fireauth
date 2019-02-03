@@ -1,3 +1,8 @@
+# About
+Website to add listings, using firebase as database<br>
+http://anu-fire.herokuapp.com/
+
+
 # Angularauth
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.4.
